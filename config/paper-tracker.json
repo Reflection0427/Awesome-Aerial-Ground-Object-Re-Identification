@@ -1,0 +1,22 @@
+{
+  "lookback_days": 45,
+  "max_results_per_query": 25,
+  "max_candidates": 30,
+  "minimum_score": 7,
+  "sources": [
+    "arxiv",
+    "openalex",
+    "crossref",
+    "dblp"
+  ],
+  "queries": [
+    "aerial-ground person re-identification",
+    "aerial ground reid",
+    "cross-platform person re-identification",
+    "drone ground person re-identification",
+    "UAV person re-identification",
+    "aerial-ground vehicle re-identification"
+  ],
+  "ignored_identifiers": [],
+  "ignored_titles": []
+}

@@ -5,3 +5,8 @@
 **/dev-*
 **/*-dev
 **/*-dev.*
+
+# Generated locally or uploaded as a GitHub Actions artifact.
+.paper-tracker/
+__pycache__/
+*.py[cod]

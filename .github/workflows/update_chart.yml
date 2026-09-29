@@ -1,9 +1,6 @@
 name: Update Publication Trend Chart
 
 on:
-  # 在每天 UTC 时间 0点运行 (北京时间早上8点)
-  schedule:
-    - cron: '0 0 * * *'
   # 当推送到 main 分支且修改了 README.md 时运行
   push:
     branches:
@@ -12,6 +9,10 @@ on:
       - 'README.md'
   # 允许手动触发
   workflow_dispatch:
+
+concurrency:
+  group: update-publication-chart
+  cancel-in-progress: true
 
 jobs:
   build-and-update-chart:

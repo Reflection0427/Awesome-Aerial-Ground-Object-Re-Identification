@@ -32,6 +32,7 @@ AG-ReID 旨在跨 **空中视角** 与 **地面视角** 匹配同一目标，主
     - [挑战赛与研讨会](#挑战赛与研讨会)
   - [💾 数据集](#-数据集)
     - [更多相关探索](#更多相关探索)
+  - [🤖 自动论文追踪](#-自动论文追踪)
   - [📈 Star 历史](#-star-历史)
   - [🤝 贡献指南](#-贡献指南)
   - [🤝 致谢](#-致谢)
@@ -153,6 +154,14 @@ AG-ReID 旨在跨 **空中视角** 与 **地面视角** 匹配同一目标，主
 | **IJCB 2025**   | AG-VPReID.VIR: Bridging Aerial and Ground Platforms for Video-based Visible-Infrared Person Re-ID                       | [论文](https://arxiv.org/abs/2507.17995) · [数据集](https://drive.google.com/drive/folders/1Iy814PqWjwIZcv6CZpieFju-Dop9Y2G7)                                                               |
 | **SPL 2025**    | Omni-Directional View Person Re-Identification Through 3D Human Reconstruction                                          | [论文](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10839551)                                                                                                                   |
 | **ACM MM 2024** | AerialGait: Bridging Aerial and Ground Views for Gait Recognition                                                       | [论文](https://dl.acm.org/doi/pdf/10.1145/3664647.3681002)                                                                                                                                  |
+
+---
+
+## 🤖 自动论文追踪
+
+本仓库可每周检索 arXiv、OpenAlex、Crossref 和 DBLP，跨数据源去重后创建滚动审核 Issue。检索结果**不会自动进入正式清单**；人工确认后，可通过手动 workflow 创建同时更新中英文 README 的 Pull Request。
+
+请参阅[配置与审核说明](docs/PAPER_TRACKER.zh-CN.md)。
 
 ---
 

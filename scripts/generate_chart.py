@@ -5,6 +5,9 @@ from collections import defaultdict
 import os
 import numpy as np
 
+# Keep SVG output byte-for-byte stable when the underlying data has not changed.
+mpl.rcParams['svg.hashsalt'] = 'awesome-agreid-publication-trend'
+
 # --- 1. 定义会议/期刊列表 (根据你的 README 内容定制) ---
 
 # CCF-A 类 (你文中出现过的)
@@ -48,8 +51,8 @@ def parse_readme(filepath):
 
         in_paper_section = False
         for line in lines:
-            # 确定只统计 Papers 区域和 Spotlight 区域
-            if "## 📝 Papers & Methods" in line or "## 🌟 Spotlight" in line:
+            # 只统计正式论文表，避免 Spotlight 中的论文被重复计算。
+            if "## 📝 Papers & Methods" in line:
                 in_paper_section = True
             if "## 💾 Datasets" in line or "## 📈 Star History" in line:
                 in_paper_section = False
@@ -183,7 +186,13 @@ def plot_chart_pami(year_counts, ccf_a_counts, ccf_b_counts, output_path):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
     # 保存 SVG (矢量) 和 PNG (位图)
-    plt.savefig(output_path, format='svg', bbox_inches='tight')
+    plt.savefig(output_path, format='svg', bbox_inches='tight', metadata={'Date': None})
+    # Matplotlib writes trailing spaces in multi-line SVG paths. Normalizing them
+    # keeps diffs clean without changing the rendered image.
+    with open(output_path, 'r', encoding='utf-8') as svg_file:
+        normalized_svg = '\n'.join(line.rstrip() for line in svg_file.read().splitlines()) + '\n'
+    with open(output_path, 'w', encoding='utf-8') as svg_file:
+        svg_file.write(normalized_svg)
     print(f"Chart saved to {output_path}")
     plt.close()
 

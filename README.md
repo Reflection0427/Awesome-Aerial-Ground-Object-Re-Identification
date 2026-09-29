@@ -32,6 +32,7 @@ AG-ReID aims to match Object across **aerial views** and **ground views**, facin
     - [Challenges \& Workshops](#challenges--workshops)
   - [💾 Datasets](#-datasets)
     - [More Related Exploration](#more-related-exploration)
+  - [🤖 Automatic Paper Tracking](#-automatic-paper-tracking)
   - [📈 Star History](#-star-history)
   - [🤝 Contributing](#-contributing)
   - [🤝 Acknowledgments](#-acknowledgments)
@@ -153,6 +154,14 @@ Automatic statistics based on the papers listed in this repository.
 | **IJCB 2025**        | AG-VPReID.VIR: Bridging Aerial and Ground Platforms for Video-based Visible-Infrared Person Re-ID                       | [Paper](https://arxiv.org/abs/2507.17995) · [Dataset](https://drive.google.com/drive/folders/1Iy814PqWjwIZcv6CZpieFju-Dop9Y2G7)                                                               |
 | **SPL 2025**         | Omni-Directional View Person Re-Identification Through 3D Human Reconstruction                                          | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10839551)                                                                                                                    |
 | **ACM MM 2024**      | AerialGait: Bridging Aerial and Ground Views for Gait Recognition                                                       | [Paper](https://dl.acm.org/doi/pdf/10.1145/3664647.3681002)                                                                                                                                   |
+
+---
+
+## 🤖 Automatic Paper Tracking
+
+This repository can search arXiv, OpenAlex, Crossref and DBLP every week, deduplicate the results, and open a rolling review issue. Search results are **never added to the curated list automatically**. After human approval, a manual workflow creates a pull request that updates both README files.
+
+See the [Chinese setup and review guide](docs/PAPER_TRACKER.zh-CN.md).
 
 ---
 

@@ -1,0 +1,103 @@
+name: Accept paper candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      section:
+        description: README section
+        required: true
+        type: choice
+        options:
+          - image-person
+          - image-vehicle
+          - video-person
+          - challenges
+          - related
+      venue_year:
+        description: Venue and year, for example CVPR 2027 or ArXiv 2027
+        required: true
+        type: string
+      method:
+        description: Method name; use — if unknown
+        required: true
+        default: —
+        type: string
+      title:
+        description: Exact paper title
+        required: true
+        type: string
+      paper_url:
+        description: Canonical paper URL
+        required: true
+        type: string
+      code_url:
+        description: Code URL, optional
+        required: false
+        type: string
+      dataset_url:
+        description: Dataset URL, optional
+        required: false
+        type: string
+      project_url:
+        description: Project URL, optional
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Add approved paper
+        env:
+          PAPER_SECTION: ${{ inputs.section }}
+          PAPER_VENUE_YEAR: ${{ inputs.venue_year }}
+          PAPER_METHOD: ${{ inputs.method }}
+          PAPER_TITLE: ${{ inputs.title }}
+          PAPER_URL: ${{ inputs.paper_url }}
+          CODE_URL: ${{ inputs.code_url }}
+          DATASET_URL: ${{ inputs.dataset_url }}
+          PROJECT_URL: ${{ inputs.project_url }}
+        run: |
+          python scripts/add_paper.py \
+            --section "$PAPER_SECTION" \
+            --venue-year "$PAPER_VENUE_YEAR" \
+            --method "$PAPER_METHOD" \
+            --title "$PAPER_TITLE" \
+            --paper-url "$PAPER_URL" \
+            --code-url "$CODE_URL" \
+            --dataset-url "$DATASET_URL" \
+            --project-url "$PROJECT_URL"
+
+      - name: Commit, push, and open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          PAPER_TITLE: ${{ inputs.title }}
+        run: |
+          branch="bot/add-paper-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add README.md README.zh-CN.md
+          git commit -m "papers: add ${PAPER_TITLE}"
+          git push origin "$branch"
+          gh pr create \
+            --repo "$REPOSITORY" \
+            --base "${GITHUB_REF_NAME}" \
+            --head "$branch" \
+            --title "papers: add ${PAPER_TITLE}" \
+            --body "Human-approved candidate added to both README files. Please verify the venue, category, links, and table order before merging."

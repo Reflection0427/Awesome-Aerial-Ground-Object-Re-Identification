@@ -1,0 +1,75 @@
+name: Discover AG-ReID Papers
+
+on:
+  schedule:
+    # Every Monday at 02:17 UTC. Avoiding the top of the hour reduces delays.
+    - cron: '17 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: discover-agreid-papers
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Search scholarly indexes
+        id: scan
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          PAPER_TRACKER_EMAIL: ${{ vars.PAPER_TRACKER_EMAIL }}
+        run: |
+          python scripts/paper_tracker.py
+          cat .paper-tracker/report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload review artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: agreid-paper-candidates
+          path: .paper-tracker/
+          retention-days: 30
+
+      - name: Ensure review label exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          gh label create paper-candidates --repo "$REPOSITORY" --color 0E8A16 --description "Candidates found by the paper tracker" --force
+
+      - name: Create or update rolling review issue
+        if: steps.scan.outputs.candidate_count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          issue_number=$(gh issue list --repo "$REPOSITORY" --state open --label paper-candidates --json number --jq '.[0].number // empty')
+          if [ -n "$issue_number" ]; then
+            gh issue edit "$issue_number" --repo "$REPOSITORY" --title "Review new AG-ReID paper candidates" --body-file .paper-tracker/report.md
+          else
+            gh issue create --repo "$REPOSITORY" --title "Review new AG-ReID paper candidates" --label paper-candidates --body-file .paper-tracker/report.md
+          fi
+
+      - name: Close an empty rolling issue
+        if: steps.scan.outputs.candidate_count == '0' && steps.scan.outputs.failure_count == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          issue_number=$(gh issue list --repo "$REPOSITORY" --state open --label paper-candidates --json number --jq '.[0].number // empty')
+          if [ -n "$issue_number" ]; then
+            gh issue close "$issue_number" --repo "$REPOSITORY" --comment "No unlisted candidates remain in the current lookback window. Closing automatically."
+          fi

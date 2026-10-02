@@ -5,6 +5,11 @@ on:
     paths:
       - 'scripts/**'
       - 'tests/**'
+      - 'data/**'
+      - 'assets/frameworks/**'
+      - 'README.md'
+      - 'README.zh-CN.md'
+      - 'requirements.txt'
       - 'config/paper-tracker.json'
       - '.github/workflows/**'
   push:
@@ -13,6 +18,11 @@ on:
     paths:
       - 'scripts/**'
       - 'tests/**'
+      - 'data/**'
+      - 'assets/frameworks/**'
+      - 'README.md'
+      - 'README.zh-CN.md'
+      - 'requirements.txt'
       - 'config/paper-tracker.json'
 
 permissions:
@@ -28,5 +38,9 @@ jobs:
           python-version: '3.12'
       - name: Validate configuration and run tests
         run: |
+          python -m pip install -r requirements.txt
           python -m json.tool config/paper-tracker.json >/dev/null
+          python -m json.tool data/frameworks.json >/dev/null
+          python -m json.tool data/datasets.json >/dev/null
           python -m unittest discover -s tests -v
+          python scripts/update_readmes.py --check

@@ -100,4 +100,4 @@ jobs:
             --base "${GITHUB_REF_NAME}" \
             --head "$branch" \
             --title "papers: add ${PAPER_TITLE}" \
-            --body "Human-approved candidate added to both README files. Please verify the venue, category, links, and table order before merging."
+            --body "Human-approved candidate added to both README files. For a core paper, this PR intentionally remains incomplete until a reviewer reads the official PDF, adds the pinned PDF metadata to data/frameworks.json, generates the author-original PNG with scripts/extract_frameworks.py, and runs scripts/update_readmes.py. Please also verify the venue, category, links, and table order before merging."

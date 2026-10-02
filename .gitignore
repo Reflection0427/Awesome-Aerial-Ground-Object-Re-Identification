@@ -10,3 +10,5 @@
 .paper-tracker/
 __pycache__/
 *.py[cod]
+.figure-work/
+.venv/

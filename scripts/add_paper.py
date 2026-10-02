@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 SECTIONS = {
-    "image-person": ("Image-based Person AG-ReID", 4),
-    "image-vehicle": ("Image-based Vehicle AG-ReID", 4),
-    "video-person": ("Video-based Person AG-ReID", 4),
+    "image-person": ("Image-based Person AG-ReID", 5),
+    "image-vehicle": ("Image-based Vehicle AG-ReID", 5),
+    "video-person": ("Video-based Person AG-ReID", 5),
     "challenges": ("Challenges & Workshops", 3),
     "related": ("More Related Exploration", 3),
 }
@@ -40,8 +40,9 @@ def make_row(args: argparse.Namespace, chinese: bool, columns: int) -> str:
     venue = f"**{clean_cell(args.venue_year)}**"
     title = clean_cell(args.title)
     link_text = resources(args, chinese)
-    if columns == 4:
-        return f"| {venue} | {clean_cell(args.method or '—')} | {title} | {link_text} |"
+    if columns == 5:
+        warning = "⚠️ 待人工核对论文原图" if chinese else "⚠️ Original figure review required"
+        return f"| {venue} | {clean_cell(args.method or '—')} | {title} | {link_text} | {warning} |"
     return f"| {venue} | {title} | {link_text} |"
 
 

@@ -1,0 +1,218 @@
+[
+  {
+    "paper_id": "uad",
+    "title": "WHU-MARS: A Multispectral Aerial-Ground Benchmark Towards Any-Scenario Person Re-Identification",
+    "authors": ["Yuxuan Zhao", "Zhongao Zhou", "Bin Yang", "He Li", "Jian Liang", "Jun Chen", "Bo Du", "Mang Ye"],
+    "figure": {"path": "assets/frameworks/uad.png", "source_pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_WHU-MARS_A_Multispectral_Aerial-Ground_Benchmark_Towards_Any-Scenario_Person_Re-Identification_CVPR_2026_paper.pdf", "source_pdf_sha256": "c2fe00f0a969bb490a9d3361de5824b6f5420ce458b614d329f23883262c0637", "figure_label": "Figure 3", "figure_kind": "framework", "page": 5, "crop_pt": [63.6, 72.8, 546.0, 226.8], "license_url": null}
+  },
+  {
+    "paper_id": "mcvl",
+    "title": "MCVL: Multi-Space Cross-View Learning for Aerial-Ground Person Re-Identification",
+    "authors": ["Wajahat Khalid", "Bin Liu", "Xulin Li", "Yubo Wang", "Muhammad Sher Afgan"],
+    "figure": {"path": "assets/frameworks/mcvl.png", "source_pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7411.pdf", "source_pdf_sha256": "c741e794e00e10a7f123e5bbe0728ce62af760de259fd571b62e349cf829570f", "figure_label": "Figure 2", "figure_kind": "framework", "page": 5, "crop_pt": [134.8, 118.8, 479.2, 247.2], "license_url": null}
+  },
+  {
+    "paper_id": "vr3d",
+    "title": "VR3D: View-Robust 3D Representation Learning for Aerial-Ground Person Re-Identification",
+    "authors": ["Chao Ji", "Shiyu Xuan", "Zechao Li"],
+    "figure": {"path": "assets/frameworks/vr3d.png", "source_pdf_url": "https://arxiv.org/pdf/2608.02598v1", "source_pdf_sha256": "9f3a5c1979592c08a470646cbea62820611bb293bc002c1f0b19c70576702f61", "figure_label": "Figure 2", "figure_kind": "framework", "page": 3, "crop_pt": [55.6, 54.8, 556.0, 254.8], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "hihr",
+    "title": "Hierarchical Hyperbolic Representation for Aerial-Ground Person Re-Identification",
+    "authors": ["Qiwei Yang", "Pingping Zhang"],
+    "figure": {"path": "assets/frameworks/hihr.png", "source_pdf_url": "https://arxiv.org/pdf/2607.09186v1", "source_pdf_sha256": "e65d3a5052cfd70474e889a51841a270c176faf3f153be508fe4c6d27425ab29", "figure_label": "Figure 2", "figure_kind": "framework", "page": 4, "crop_pt": [134.0, 114.8, 481.2, 318.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "georeid",
+    "title": "Rectifying Geometry-Induced Similarity Distortions for Real-World Aerial-Ground Person Re-Identification",
+    "authors": ["Kailash A. Hambarde", "Hugo Proença"],
+    "figure": {"path": "assets/frameworks/georeid.png", "source_pdf_url": "https://arxiv.org/pdf/2601.21405v1", "source_pdf_sha256": "9e4b656e26b735432c9ffd92a346922658808ab294cd5fb3244217c886c8fb45", "figure_label": "Figure 2", "figure_kind": "framework", "page": 3, "crop_pt": [48.0, 56.0, 563.2, 249.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "3d-lens",
+    "title": "3D-LENS: A 3D Lifting-based Elevated Novel-view Synthesis method for Single-View Aerial-Ground Re-Identification",
+    "authors": ["William Grolleau", "Astrid Sabourin", "Guillaume Lapouge", "Catherine Achard"],
+    "figure": {"path": "assets/frameworks/3d-lens.png", "source_pdf_url": "https://arxiv.org/pdf/2604.26520v1", "source_pdf_sha256": "e5abc9c4e2114fa06b5f2d61133c33c761443ea10d93b55d2f000534a575d2aa", "figure_label": "Figure 2", "figure_kind": "framework", "page": 6, "crop_pt": [134.0, 114.8, 481.2, 287.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "visa",
+    "title": "View-Aware Semantic Alignment for Aerial-Ground Person Re-Identification",
+    "authors": ["Quan Zhang", "Zeqiang Cai", "Peiming Zhao", "Jingze Wu", "Cailun Wu", "Hongbo Chen", "Jianhuang Lai"],
+    "figure": {"path": "assets/frameworks/visa.png", "source_pdf_url": "https://arxiv.org/pdf/2605.18192v1", "source_pdf_sha256": "49823b4f1db8789bde3c10274b831f93661470dbf21c8b297476e600566227dd", "figure_label": "Figure 2", "figure_kind": "overview", "page": 3, "crop_pt": [58.0, 72.0, 553.2, 299.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "cfan",
+    "title": "Cross-modal Fuzzy Alignment Network for Text-Aerial Person Retrieval and A Large-scale Benchmark",
+    "authors": ["Yifei Deng", "Chenglong Li", "Yuyang Zhang", "Guyue Hu", "Jin Tang"],
+    "figure": {"path": "assets/frameworks/cfan.png", "source_pdf_url": "https://arxiv.org/pdf/2603.20721v1", "source_pdf_sha256": "74156ce980837fa566902263e50147d86947ffba108d0a1d4d26cca345a1e7ad", "figure_label": "Figure 2", "figure_kind": "overview", "page": 4, "crop_pt": [60.8, 72.0, 551.2, 303.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "glpsg",
+    "title": "Global-local prompts-driven semantic guidance for aerial-ground person re-identification",
+    "authors": ["Ronghong Zhu", "Hongxu Chen", "Xiaohua Xie", "Jianhuang Lai"],
+    "figure": {"path": "assets/frameworks/glpsg.png", "source_pdf_url": "https://link.springer.com/content/pdf/10.1007/978-981-95-5755-4_7", "source_pdf_sha256": "607890acf71354aba3101c60ac77ebca6c3c7f6dacb2f6321c688c15d9b7c0cd", "figure_label": "Figure 2", "figure_kind": "framework", "page": 5, "crop_pt": [56.8, 54.0, 395.2, 212.4], "license_url": null}
+  },
+  {
+    "paper_id": "tag-clip",
+    "title": "Text-based Aerial-Ground Object Retrieval",
+    "authors": ["Xinyu Zhou", "Yu Wu", "Jiayao Ma", "Wenhao Wang", "Min Cao", "Mang Ye"],
+    "figure": {"path": "assets/frameworks/tag-clip.png", "source_pdf_url": "https://arxiv.org/pdf/2511.08369v1", "source_pdf_sha256": "1237da3b5a46c3c77ed6b3f4fd6aa7c5b37ab6dc89e92f3fe295f0e82b03836e", "figure_label": "Figure 4", "figure_kind": "overview", "page": 5, "crop_pt": [68.8, 54.0, 543.2, 261.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "svpr-reid",
+    "title": "Semantic-Driven Visual Progressive Refinement for Aerial-Ground Person ReID: A Challenging Large-Scale Benchmark",
+    "authors": ["Aihua Zheng", "Hao Xie", "Xixi Wan", "Zi Wang", "Shihao Li", "Jin Tang", "Bin Luo"],
+    "figure": {"path": "assets/frameworks/svpr-reid.png", "source_pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38339/42301", "source_pdf_sha256": "e5b91a424af1e9d444d1dbdb304ff6affbfd8159f3b9ca5d7464ef379c54e509", "figure_label": "Figure 2", "figure_kind": "framework", "page": 3, "crop_pt": [60.8, 52.8, 551.2, 312.0], "license_url": null}
+  },
+  {
+    "paper_id": "gsalign",
+    "title": "Geometric and Semantic Alignment Network for Aerial-Ground Person Re-Identification",
+    "authors": ["Qiao Li", "Jie Li", "Yukang Zhang", "Lei Tan", "Jing Chen", "Jiayi Ji"],
+    "figure": {"path": "assets/frameworks/gsalign.png", "source_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/86c17de05579cde52025f9984e6e2ebb-Paper-Conference.pdf", "source_pdf_sha256": "9fce4ae77c8356e72a748b53ae1740bc1fd66cd3349a8e97d5dae7c11dde9864", "figure_label": "Figure 2", "figure_kind": "architecture", "page": 4, "crop_pt": [109.6, 70.8, 505.2, 189.2], "license_url": null}
+  },
+  {
+    "paper_id": "vif",
+    "title": "Bridging the Sky and Ground: Towards View-Invariant Feature Learning for Aerial-Ground Person Re-Identification",
+    "authors": ["Wajahat Khalid", "Bin Liu", "Xulin Li", "Muhammad Waqas", "Muhammad Sher Afgan"],
+    "figure": {"path": "assets/frameworks/vif.png", "source_pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Khalid_Bridging_the_Sky_and_Ground_Towards_View-Invariant_Feature_Learning_for_ICCV_2025_paper.pdf", "source_pdf_sha256": "d59ae6c26d441819278edb0444bedb13d59d5eddaab7bf56e86fb6b59635b7b6", "figure_label": "Figure 2", "figure_kind": "framework", "page": 3, "crop_pt": [62.0, 72.8, 551.2, 259.2], "license_url": null}
+  },
+  {
+    "paper_id": "sd-reid",
+    "title": "View-aware Stable Diffusion for Aerial-Ground Person Re-Identification",
+    "authors": ["Xiang Hu", "Pingping Zhang", "Yuhao Wang", "Bin Yan", "Huchuan Lu"],
+    "figure": {"path": "assets/frameworks/sd-reid.png", "source_pdf_url": "https://arxiv.org/pdf/2504.09549v1", "source_pdf_sha256": "5eb1c0eb5710edc794dc4927a5ce58245948a18e62d1522fe40277b872ab5364", "figure_label": "Figure 2", "figure_kind": "overview", "page": 4, "crop_pt": [62.0, 78.0, 547.2, 378.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "latex",
+    "title": "Leveraging Attribute-based Text Knowledge for Aerial-Ground Person Re-Identification",
+    "authors": ["Xiang Hu", "Yuhao Wang", "Pingping Zhang", "Huchuan Lu"],
+    "figure": {"path": "assets/frameworks/latex.png", "source_pdf_url": "https://arxiv.org/pdf/2503.23722v1", "source_pdf_sha256": "ec9824980c26a5b611cba9334d50852817a2a0df63c51677dc4812fc0c97b6f8", "figure_label": "Figure 3", "figure_kind": "framework", "page": 3, "crop_pt": [58.8, 73.6, 536.0, 309.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "dtst",
+    "title": "Dynamic Token Selective Transformer for Aerial-Ground Person Re-Identification",
+    "authors": ["Yuhai Wang", "Maryam Pishgar"],
+    "figure": {"path": "assets/frameworks/dtst.png", "source_pdf_url": "https://yuhaiw.github.io/DTS-AGPReID/ICMEYuhai.pdf", "source_pdf_sha256": "10377053b0ccb49f5a7999f505c7634012d5734f1d77d32a7de2268b5b528b19", "figure_label": "Figure 2", "figure_kind": "framework", "page": 2, "crop_pt": [100.0, 50.0, 512.0, 200.0], "license_url": null}
+  },
+  {
+    "paper_id": "secap",
+    "title": "Self-Calibrating and Adaptive Prompts for Cross-view Person Re-Identification in Aerial-Ground Networks",
+    "authors": ["Shining Wang", "Yunlong Wang", "Ruiqi Wu", "Bingliang Jiao", "Wenxuan Wang", "Peng Wang"],
+    "figure": {"path": "assets/frameworks/secap.png", "source_pdf_url": "https://arxiv.org/pdf/2503.06965v1", "source_pdf_sha256": "0a0574d35b893584cef7bf973279c5a072e5c165814eb6735cc7f0ad6e4cdb0e", "figure_label": "Figure 2", "figure_kind": "architecture", "page": 4, "crop_pt": [64.4, 74.8, 546.0, 268.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "cvaf",
+    "title": "A CLIP-Based View-Consistent Alignment Framework for Aerial-Ground Person Re-Identification",
+    "authors": ["Dongxu Mao", "Shangzhi Teng", "Xueqiang Lv"],
+    "figure": {"path": "assets/frameworks/cvaf.png", "source_pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3785482", "source_pdf_sha256": "2e6102ac8078e2df9d42a08febc73a28f145adb9f5e6575c87df2ea062cc41a9", "figure_label": "Figure 2", "figure_kind": "framework", "page": 6, "crop_pt": [65.0, 75.0, 550.0, 330.0], "license_url": null}
+  },
+  {
+    "paper_id": "pdpa",
+    "title": "Perspective Driven Prototype Alignment for Aerial-Ground Person Re-identification",
+    "authors": ["Yuli Huang", "Hongxu Chen", "Zhanxiang Feng", "Jianhuang Lai"],
+    "figure": {"path": "assets/frameworks/pdpa.png", "source_pdf_url": "https://link.springer.com/content/pdf/10.1007/978-981-95-3393-0_42", "source_pdf_sha256": "bec1ed27529a62934157d9ab26acd53b458b2de3b09aa7e01f6e1623e9db1ee4", "figure_label": "Figure 2", "figure_kind": "pipeline", "page": 4, "crop_pt": [42.8, 54.0, 382.0, 241.2], "license_url": null}
+  },
+  {
+    "paper_id": "uagrpg",
+    "title": "Unsupervised Aerial-Ground Re-Identification from Pedestrian to Group for UAV-Based Surveillance",
+    "authors": ["Ling Mei", "Yiwei Cheng", "Hongxu Chen", "Lvxiang Jia", "Yaowen Yu"],
+    "figure": {"path": "assets/frameworks/uagrpg.png", "source_pdf_url": "https://mdpi-res.com/d_attachment/drones/drones-09-00244/article_deploy/drones-09-00244-v2.pdf", "source_pdf_sha256": "556f2c44eb72f63d969f567628bd2ce9911645dd739ed57661ffb80b8ad23c50", "figure_label": "Figure 2", "figure_kind": "pipeline", "page": 6, "crop_pt": [166.0, 488.8, 538.0, 687.2], "license_url": "https://creativecommons.org/licenses/by/4.0/"}
+  },
+  {
+    "paper_id": "implicit-decoder-alignment",
+    "title": "Implicit Decoder Alignment for Aerial-ground Person Re-identification",
+    "authors": ["Junren Bei", "Quan Zhang", "Jianhuang Lai"],
+    "figure": {"path": "assets/frameworks/implicit-decoder-alignment.png", "source_pdf_url": "https://www.aas.net.cn/cn/article/pdf/preview/10.16383/j.aas.c240705.pdf", "source_pdf_sha256": "386155f586101c9bc1caf4525c8b1cf5c540cd0ad0116f86fc60842f5a6c9298", "figure_label": "Figure 2", "figure_kind": "framework", "page": 4, "crop_pt": [80.0, 550.0, 530.0, 725.0], "license_url": null}
+  },
+  {
+    "paper_id": "vdt",
+    "title": "View-decoupled Transformer for Person Re-identification under Aerial-ground Camera Network",
+    "authors": ["Quan Zhang", "Lei Wang", "Vishal M. Patel", "Xiaohua Xie", "Jianhuang Lai"],
+    "figure": {"path": "assets/frameworks/vdt.png", "source_pdf_url": "https://arxiv.org/pdf/2403.14513v1", "source_pdf_sha256": "5a56fdbf6d6d7d2a62294894ef9e35b218fd6db4ed5e16297241195a8b18334f", "figure_label": "Figure 2", "figure_kind": "framework", "page": 3, "crop_pt": [64.8, 73.2, 531.2, 274.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "v2e",
+    "title": "Bridging Aerial and Ground Views for Person Re-identification",
+    "authors": ["Huy Nguyen", "Kien Nguyen", "Sridha Sridharan", "Clinton Fookes"],
+    "figure": {"path": "assets/frameworks/v2e.png", "source_pdf_url": "https://arxiv.org/pdf/2401.02634v1", "source_pdf_sha256": "ed36f6ce6b95c79947b00fd4df8ad85c5772f6760f3cd4c4bf6a8e2cadf0cad0", "figure_label": "Figure 9", "figure_kind": "architecture", "page": 7, "crop_pt": [62.8, 56.8, 549.6, 313.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "explain",
+    "title": "Aerial-Ground Person Re-ID",
+    "authors": ["Huy Nguyen", "Kien Nguyen", "Sridha Sridharan", "Clinton Fookes"],
+    "figure": {"path": "assets/frameworks/explain.png", "source_pdf_url": "https://arxiv.org/pdf/2303.08597v1", "source_pdf_sha256": "9ac8fe4b3eb0c8025cd762e9c67e7dae8b847bd6075785c67eadbf8796f70e4a", "figure_label": "Figure 4", "figure_kind": "architecture", "page": 4, "crop_pt": [85.2, 76.8, 527.2, 241.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "deep-feature-fusion",
+    "title": "Person Re-Identification Across Aerial and Ground-Based Cameras by Deep Feature Fusion",
+    "authors": ["Arne Schumann", "Jürgen Metzler"],
+    "figure": {"path": "assets/frameworks/deep-feature-fusion.png", "source_pdf_url": "https://publica.fraunhofer.de/bitstreams/ef904224-f31f-484d-b8d2-56695e46779c/download", "source_pdf_sha256": "4c1a07eb1afe219635beac8549b11aa34a76f7c3609299caf36b1a0d464ae91a", "figure_label": "Figure 2", "figure_kind": "architecture", "page": 5, "crop_pt": [62.8, 72.0, 552.0, 222.4], "license_url": null}
+  },
+  {
+    "paper_id": "cvnet",
+    "title": "Lightweight Cross-View Vehicle ReID with Multi-Scale Localization",
+    "authors": ["Wenji Yin", "Baixuan Han", "Yueping Peng", "Hexiang Hao", "Zecong Ye", "Yu Shen", "Yanjun Cai", "Wenchao Kang"],
+    "figure": {"path": "assets/frameworks/cvnet.png", "source_pdf_url": "https://mdpi-res.com/d_attachment/sensors/sensors-25-02809/article_deploy/sensors-25-02809-v2.pdf", "source_pdf_sha256": "f1ed1ab549954c4cd0e4ecd0b002be657807a9653efe52b60e57e209390a3aeb", "figure_label": "Figure 3", "figure_kind": "architecture", "page": 6, "crop_pt": [166.0, 504.8, 557.2, 683.2], "license_url": "https://creativecommons.org/licenses/by/4.0/"}
+  },
+  {
+    "paper_id": "agid",
+    "title": "Aerial-Ground Cross-View Vehicle Re-Identification: A Benchmark Dataset and Baseline",
+    "authors": ["Linzhi Shang", "Chen Min", "Juan Wang", "Liang Xiao", "Dawei Zhao", "Yiming Nie"],
+    "figure": {"path": "assets/frameworks/agid.png", "source_pdf_url": "https://mdpi-res.com/d_attachment/remotesensing/remotesensing-17-02653/article_deploy/remotesensing-17-02653-v2.pdf", "source_pdf_sha256": "36ab7e1230f27c95962d17a1610ab1d4e547c4d92937da6e50edf39e7661f51d", "figure_label": "Figure 4", "figure_kind": "framework", "page": 8, "crop_pt": [172.0, 75.6, 553.2, 309.2], "license_url": "https://creativecommons.org/licenses/by/4.0/"}
+  },
+  {
+    "paper_id": "sas-vpreid",
+    "title": "A Scale-Adaptive Framework with Shape Priors for Video-based Person Re-Identification at Extreme Far Distances",
+    "authors": ["Qiwei Yang", "Pingping Zhang", "Yuhao Wang", "Zijing Gong"],
+    "figure": {"path": "assets/frameworks/sas-vpreid.png", "source_pdf_url": "https://arxiv.org/pdf/2601.05535v1", "source_pdf_sha256": "45507cebddfc90eca02d992f4b92e6e759540fdfb13cc0b6248d9bc6096682b9", "figure_label": "Figure 2", "figure_kind": "framework", "page": 4, "crop_pt": [58.0, 72.0, 554.0, 380.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "s3-clip",
+    "title": "Video Super Resolution for Person-ReID",
+    "authors": ["Tamas Endrei", "Gyorgy Cserey"],
+    "figure": {"path": "assets/frameworks/s3-clip.png", "source_pdf_url": "https://arxiv.org/pdf/2601.08807v1", "source_pdf_sha256": "11479f0c862ea6dcebd3a78831d78c2f03bc839202028fc67bd4fe8dbd226bc6", "figure_label": "Figure 1", "figure_kind": "architecture", "page": 4, "crop_pt": [58.8, 98.8, 554.0, 351.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "eagle-reid",
+    "title": "Strategic alignment and delta consistency for extreme far-distance aerial-ground re-identification",
+    "authors": ["Cheng-Jun Kang", "Jin-Hui Jiang", "Yu-Fan Lin", "Chih-Chung Hsu"],
+    "figure": {"path": "assets/frameworks/eagle-reid.png", "source_pdf_url": "https://openaccess.thecvf.com/content/WACV2026W/VReID-XFD/papers/Kang_EAGLE-ReID_Strategic_Alignment_and_Delta_Consistency_for_Extreme_Far-Distance_Aerial-Ground_WACVW_2026_paper.pdf", "source_pdf_sha256": "7b89b0b99408f54051f7e96f148056f317e556c0acec01198b88ad9d1849eca2", "figure_label": "Figure 3", "figure_kind": "architecture", "page": 3, "crop_pt": [72.0, 74.8, 540.0, 184.0], "license_url": null}
+  },
+  {
+    "paper_id": "dfgs-clip",
+    "title": "Enhancing Aerial-Ground Video Person Re-Identification via DFGS-Guided CLIP Sampling and Inference-Time Uncertainty-Aware Fusion",
+    "authors": ["Thi Ngoc Ha Nguyen", "Tien-Dung Mai"],
+    "figure": {"path": "assets/frameworks/dfgs-clip.png", "source_pdf_url": "https://openaccess.thecvf.com/content/WACV2026W/VReID-XFD/papers/Nguyen_Enhancing_Aerial-Ground_Video_Person_Re-Identification_via_DFGS-Guided_CLIP_Sampling_and_WACVW_2026_paper.pdf", "source_pdf_sha256": "c2884fb760a9e1827bbf16f52132dbec3efcafde1bde6dbaf4b48892207c9bd8", "figure_label": "Figure 1", "figure_kind": "framework", "page": 4, "crop_pt": [82.8, 70.8, 529.2, 407.2], "license_url": null}
+  },
+  {
+    "paper_id": "ag-vpreid",
+    "title": "A Challenging Large-Scale Benchmark for Aerial-Ground Video-based Person Re-Identification",
+    "authors": ["Huy Nguyen", "Kien Nguyen", "Akila Pemasiri", "Feng Liu", "Sridha Sridharan", "Clinton Fookes"],
+    "figure": {"path": "assets/frameworks/ag-vpreid.png", "source_pdf_url": "https://arxiv.org/pdf/2503.08121v1", "source_pdf_sha256": "911ab2302737dcfabb49570cf481eafdec64efa68532c109a020dc368a9e3f42", "figure_label": "Figure 3", "figure_kind": "architecture", "page": 6, "crop_pt": [58.0, 72.0, 554.0, 261.2], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "vm-taps",
+    "title": "View-specific Memory with Temporal and Scale Awareness Framework for Video-based Cross-View Person Re-Identification",
+    "authors": ["Md Rashidunnabi", "Kailash A. Hambarde", "João C. Neves", "Vasco Lopes", "Hugo Proença"],
+    "figure": {"path": "assets/frameworks/vm-taps.png", "source_pdf_url": "https://www.di.ubi.pt/~hugomcp/doc/rashid_ijcb2025.pdf", "source_pdf_sha256": "fd617e7f54e0cdda88c2958b5d9d752265e9b490e5b8ba1359a86fb386ccf09e", "figure_label": "Figure 2", "figure_kind": "framework", "page": 3, "crop_pt": [50.0, 364.8, 546.0, 606.0], "license_url": null}
+  },
+  {
+    "paper_id": "detreidx",
+    "title": "A Stress-Test Dataset for Real-World UAV-Based Person Recognition",
+    "authors": ["Kailash A. Hambarde", "Nzakiese Mbongo", "Pavan Kumar MP", "Satish Mekewad", "Carolina Fernandes", "Gökhan Silahtaroğlu", "Alice Nithya", "Pawan Wasnik", "Md Rashidunnabi"],
+    "figure": {"path": "assets/frameworks/detreidx.png", "source_pdf_url": "https://arxiv.org/pdf/2505.04793v1", "source_pdf_sha256": "465b6b9c4c0aa240810b42b4104c0045c99a84590227bfaf7181588e84172db8", "figure_label": "Figure 5", "figure_kind": "dataset", "page": 4, "crop_pt": [310.8, 56.0, 564.0, 276.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "mtf-cvreid",
+    "title": "Seeing Across Time and Views: Multi-Temporal Cross-View Learning for Robust Video Person Re-Identification",
+    "authors": ["Md Rashidunnabi", "Kailash A. Hambarde", "Vasco Lopes", "João C. Neves", "Hugo Proença"],
+    "figure": {"path": "assets/frameworks/mtf-cvreid.png", "source_pdf_url": "https://arxiv.org/pdf/2511.02564v1", "source_pdf_sha256": "6ad45cc7d6639fca7d104bbd9b236568d93f87c1cab2ad67d85cddf40e080590", "figure_label": "Figure 2", "figure_kind": "architecture", "page": 3, "crop_pt": [48.0, 56.0, 564.0, 262.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  },
+  {
+    "paper_id": "cross-platform-video",
+    "title": "Cross-Platform Video Person ReID: A New Benchmark Dataset and Adaptation Approach",
+    "authors": ["Shizhou Zhang", "Wenlong Luo", "De Cheng", "Qingchun Yang", "Lingyan Ran", "Yinghui Xing", "Yanning Zhang"],
+    "figure": {"path": "assets/frameworks/cross-platform-video.png", "source_pdf_url": "https://arxiv.org/pdf/2408.07500v1", "source_pdf_sha256": "26a942f8e9649d8b8871dc221cfe8d6453b438b9e031da4cbdaf229514a301ec", "figure_label": "Figure 3", "figure_kind": "framework", "page": 7, "crop_pt": [152.0, 114.8, 464.0, 252.0], "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"}
+  }
+]

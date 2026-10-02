@@ -1,0 +1,23 @@
+{
+  "verified_on": "2026-10-02",
+  "datasets": [
+    {"name": "AG-ReID", "source": "ICME 2023", "ids": 388, "images": 21983, "data_source": "real", "scenarios": 1, "cameras": "2 (1A+1G)", "attributes": 15, "captions": false, "illumination": "Day", "cross_time": false, "season": "Spring, Summer", "altitude": "15–45 m", "download_url": "https://drive.google.com/file/d/1hzieEPlXfjkN3V3XWqI5rAwpF_sCF1K9/view"},
+    {"name": "AG-ReID.v2", "source": "TITS 2024", "ids": 1615, "images": 100502, "data_source": "real", "scenarios": 1, "cameras": "3 (1A+1G+1W)", "attributes": 15, "captions": false, "illumination": "Day", "cross_time": false, "season": "Spring, Summer", "altitude": "1.5 m, 3 m, 15–45 m", "download_url": "https://drive.google.com/drive/folders/16r7G_CuUqfWG6_UCT7goIGRMqJird6vK"},
+    {"name": "CARGO", "source": "CVPR 2024", "ids": 5000, "images": 108563, "data_source": "synthetic", "scenarios": 1, "cameras": "13 (5A+8G)", "attributes": 0, "captions": false, "illumination": "Day & Night", "cross_time": false, "season": "Virtual Summer", "altitude": "5–75 m", "download_url": "https://drive.google.com/file/d/1yDjyH0VtW7efxP3vgQjIqTx2oafCB67t/view"},
+    {"name": "G2APS-ReID", "source": "CVPR 2025", "ids": 2788, "images": 200864, "data_source": "real", "scenarios": 1, "cameras": "2 (1A+1G)", "attributes": 0, "captions": false, "illumination": "Day or Night", "cross_time": false, "season": "Summer", "altitude": "20–60 m", "download_url": "https://pan.baidu.com/share/init?surl=MRrhqoQzwxw7qOx4Lqdl2g"},
+    {"name": "LAGPeR", "source": "CVPR 2025", "ids": 4231, "images": 63842, "data_source": "real", "scenarios": 7, "cameras": "21 (7A+14G)", "attributes": 0, "captions": false, "illumination": "Day or Night", "cross_time": false, "season": "Summer", "altitude": "20–60 m", "download_url": "https://pan.baidu.com/share/init?surl=MRrhqoQzwxw7qOx4Lqdl2g"},
+    {"name": "CP2108", "source": "AAAI 2026", "ids": 2108, "images": 142817, "data_source": "real", "scenarios": 8, "cameras": "39 (17A+22G)", "attributes": 22, "captions": true, "illumination": "Day & Night", "cross_time": true, "season": "All Year", "altitude": "2 m, 15–60 m", "download_url": "https://github.com/ahu-xhao/SVPR-ReID"}
+  ],
+  "additional_datasets": [
+    {"name": "MOO", "source": "ArXiv 2026", "category": "Image.Animal", "download_url": "https://github.com/TurtleSmoke/MOO"},
+    {"name": "AG-VPReID", "source": "CVPR 2025", "category": "Video.Person", "download_url": "https://drive.google.com/drive/folders/1wtdhKzK9Fbj7xkGAM84KNJ1uYCxSMHdj"},
+    {"name": "DetReIDX", "source": "TBIOM 2025", "category": "Video.Person", "download_url": "https://github.com/kailashhambarde/DetReIDX/tree/main"}
+  ],
+  "sota": [
+    {"dataset": "AG-ReID", "methods": "GLPSG", "results": "A→G: 81.50 / 87.70; G→A: 84.30 / 90.60", "sources": [{"label": "GLPSG", "url": "https://link.springer.com/chapter/10.1007/978-981-95-5755-4_7"}]},
+    {"dataset": "AG-ReID.v2", "methods": "HiHR; CVAF", "results": "A→C: 84.04 / 88.84 (HiHR); C→A: 83.21 / 88.57 (HiHR); A→W: 87.81 / 92.49 (CVAF); W→A: 85.08 / 90.85 (CVAF)", "sources": [{"label": "HiHR", "url": "https://arxiv.org/abs/2607.09186"}, {"label": "CVAF", "url": "https://dl.acm.org/doi/10.1145/3785482"}]},
+    {"dataset": "CARGO", "methods": "HiHR; MCVL; ViSA", "results": "ALL: 67.52 / 74.36 (HiHR); A→G: 70.53 / 75.53 (HiHR); A→A: 72.41 / 82.50 (MCVL); G→G: 83.90 / 88.39 (ViSA)", "sources": [{"label": "HiHR", "url": "https://arxiv.org/abs/2607.09186"}, {"label": "MCVL", "url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7411.pdf"}, {"label": "ViSA", "url": "https://arxiv.org/abs/2605.18192"}]},
+    {"dataset": "G2APS-ReID", "methods": "MCVL", "results": "A→G: 62.95 / 78.87; G→A: 59.70 / 74.50", "sources": [{"label": "MCVL", "url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7411.pdf"}]},
+    {"dataset": "LAGPeR", "methods": "HiHR", "results": "A→G: 33.80 / 46.95; G→A: 36.74 / 39.30; G→A+G: 23.99 / 31.39", "sources": [{"label": "HiHR", "url": "https://arxiv.org/abs/2607.09186"}]}
+  ]
+}

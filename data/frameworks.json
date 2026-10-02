@@ -105,7 +105,7 @@
     "paper_id": "cvaf",
     "title": "A CLIP-Based View-Consistent Alignment Framework for Aerial-Ground Person Re-Identification",
     "authors": ["Dongxu Mao", "Shangzhi Teng", "Xueqiang Lv"],
-    "figure": {"path": "assets/frameworks/cvaf.png", "source_pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3785482", "source_pdf_sha256": "2e6102ac8078e2df9d42a08febc73a28f145adb9f5e6575c87df2ea062cc41a9", "figure_label": "Figure 2", "figure_kind": "framework", "page": 6, "crop_pt": [65.0, 75.0, 550.0, 330.0], "license_url": null}
+    "figure": {"path": "assets/frameworks/cvaf.png", "source_pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3785482", "source_pdf_sha256": "2e6102ac8078e2df9d42a08febc73a28f145adb9f5e6575c87df2ea062cc41a9", "figure_label": "Figure 2", "figure_kind": "framework", "page": 6, "crop_pt": [65.0, 92.0, 550.0, 330.0], "license_url": null}
   },
   {
     "paper_id": "pdpa",
@@ -123,7 +123,7 @@
     "paper_id": "implicit-decoder-alignment",
     "title": "Implicit Decoder Alignment for Aerial-ground Person Re-identification",
     "authors": ["Junren Bei", "Quan Zhang", "Jianhuang Lai"],
-    "figure": {"path": "assets/frameworks/implicit-decoder-alignment.png", "source_pdf_url": "https://www.aas.net.cn/cn/article/pdf/preview/10.16383/j.aas.c240705.pdf", "source_pdf_sha256": "386155f586101c9bc1caf4525c8b1cf5c540cd0ad0116f86fc60842f5a6c9298", "figure_label": "Figure 2", "figure_kind": "framework", "page": 4, "crop_pt": [80.0, 550.0, 530.0, 725.0], "license_url": null}
+    "figure": {"path": "assets/frameworks/implicit-decoder-alignment.png", "source_pdf_url": "https://www.aas.net.cn/cn/article/pdf/preview/10.16383/j.aas.c240705.pdf", "source_pdf_sha256": "386155f586101c9bc1caf4525c8b1cf5c540cd0ad0116f86fc60842f5a6c9298", "figure_label": "Figure 2", "figure_kind": "framework", "page": 4, "crop_pt": [80.0, 550.0, 530.0, 717.0], "license_url": null}
   },
   {
     "paper_id": "vdt",
